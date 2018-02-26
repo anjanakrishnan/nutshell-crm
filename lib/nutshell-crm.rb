@@ -31,6 +31,13 @@ module NutshellCrm
       @api_url = "https://#{api_host}/api/v1/json"
     end
 
+    # Add two nos
+    # testing
+
+    def add(num1, num2)
+      exec_request build_payload({:num1 => num1, :num2 => num2})
+    end
+
     # Saves the given e-mail message.
     #
     # @param [String] e-mail in RFC 822 format
